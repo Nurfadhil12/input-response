@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="description" content="The Earth needs the greatest defender">
+        <meta name="keyword" content="The Earth needs the greatest defender">
+        <meta name="author" content="Assemble your team">
+        <title>Assemble your team | The Earth needs the greatest defender</title>
+        <!-- Styles-->
+        <link rel="stylesheet" type="text/css" href="./assets/css/vendors.min.css">
+        <link href="./assets/css/styles.min.css" rel="stylesheet" type="text/css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <style>
+        .card-modal{
+            padding: 30px 20px;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 5%);
+            border-radius: 10px;
+            border: 1px #e5e5e5 solid;
+            text-align: center;
+        }
+        .stabilo{
+            color: #17C657;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .title{
+            font-size: 18px;
+            font-weight: 800;
+            color: #000;
+        }
+        #team-chosen{
+            display: flex;
+            flex-direction: column;
+        }
+        #team-chosen h3{
+            color: #858585;
+            font-size: 20px;
+        }
+    </style>
+    <body>
+        <div id="page-wrapper">
+            <header id="masthead" class="text-center">
+            	<h1>Assemble your team</h1>
+            	<span class="sep-border"></span>
+            	<h3>Make a group consists of 3 people</h3>
+            </header>
+		<div id="team-builder">
+			<div id="team-chosen">
+
+			</div>
+			<div id="member-input">
+				<input type="text" class="input-field" id="name-input" placeholder="Input name here..." />
+				<button onclick="addTeam()" id="confirm-member">Add to the team</button>
+				<button id="confirm-team" onclick="addmodule()" class="not-ready">Need 3 more people</button>
+			</div>
+            <div class="card-modal" id="modal" data-aos="fade-up">
+                <p class="stabilo">congratulations!</p>
+                <p class="title">
+                    You've just assembled <br>
+                    The Earth Greatest Defender
+                </p>
+            </div>
+		</div>
+
+        </div>
+
+        <script src="./assets/js/vendors.min.js"></script>
+        <script type="text/javascript" src="./assets/js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>       
+    </body>
+    <script>
+        AOS.init();
+    </script>
+</html>
